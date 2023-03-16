@@ -5,8 +5,8 @@ const app = express();
 const cors = require("cors");
 
 const hostname = '127.0.0.1';
-const port = 8080;
-require("dotenv").config({ path: "./config.env" });
+const port = process.env.PORT;
+
 
 app.use(cors());
 
