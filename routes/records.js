@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const { Configuration, OpenAIApi } = require("openai");
-require("dotenv").config({ path: "./config.env" });
+
 
 router.route("/questions").post(async (req, res) => {
   const  question  = req.body.message;
